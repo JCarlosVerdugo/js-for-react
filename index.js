@@ -12,23 +12,33 @@
 // console.log(add(10))
 
 // OBJECTS //
-const user = {
-    name: 'juan',
-    lastname: 'perez',
-    age: 30,
-    address: {
-        country: 'mexico',
-        city: 'monterrey',
-        street: 'main street 123'
-    },
-    friends: ['francisco', 'jesus'],
-    active: true,
-    sendMail: function() {
-        return 'sending email...'
-    }
+// const user = {
+//     name: 'juan',
+//     lastname: 'perez',
+//     age: 30,
+//     address: {
+//         country: 'mexico',
+//         city: 'monterrey',
+//         street: 'main street 123'
+//     },
+//     friends: ['francisco', 'jesus'],
+//     active: true,
+//     sendMail: function() {
+//         return 'sending email...'
+//     }
+// }
+
+// console.log(user.address.city);
+// console.log(user.friends);
+// console.log(user.active);
+// console.log(user.sendMail());
+
+const name = 'laptop';
+const price = 3000;
+
+const newProduct = {
+    name,
+    price
 }
 
-console.log(user.address.city);
-console.log(user.friends);
-console.log(user.active);
-console.log(user.sendMail());
+console.log(newProduct)
