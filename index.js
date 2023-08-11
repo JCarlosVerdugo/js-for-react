@@ -2,13 +2,10 @@
 // function hello(name) {
 //     return 'Hola ' + name;
 // }
-
 // console.log(hello('Carlos'))
-
 // function add(x, y = 0) {
 //     return x + y;
 // }
-
 // console.log(add(10))
 
 // OBJECTS //
@@ -33,12 +30,24 @@
 // console.log(user.active);
 // console.log(user.sendMail());
 
-const name = 'laptop';
-const price = 3000;
+//Short first hand object
+// const name = 'laptop';
+// const price = 3000;
+// const newProduct = {
+//     name,
+//     price
+// }
+// console.log(newProduct)
 
-const newProduct = {
-    name,
-    price
-}
+const title = document.createElement('h1');
+title.innerText = 'Hola mundo desde js';
 
-console.log(newProduct)
+const button = document.createElement('button');
+button.innerText = 'click';
+button.addEventListener('click', function() {
+    title.innerText = 'Actualizado con js';
+    alert('Se realizó un click')
+});
+
+document.body.append(title)
+document.body.append(button)
