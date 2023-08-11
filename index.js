@@ -8,6 +8,7 @@
 // }
 // console.log(add(10))
 
+
 // OBJECTS //
 // const user = {
 //     name: 'juan',
@@ -24,13 +25,13 @@
 //         return 'sending email...'
 //     }
 // }
-
 // console.log(user.address.city);
 // console.log(user.friends);
 // console.log(user.active);
 // console.log(user.sendMail());
 
-//Short first hand object
+
+//Short first hand object //
 // const name = 'laptop';
 // const price = 3000;
 // const newProduct = {
@@ -39,15 +40,31 @@
 // }
 // console.log(newProduct)
 
-const title = document.createElement('h1');
-title.innerText = 'Hola mundo desde js';
 
-const button = document.createElement('button');
-button.innerText = 'click';
-button.addEventListener('click', function() {
-    title.innerText = 'Actualizado con js';
-    alert('Se realizó un click')
-});
+// DOM //
+// const title = document.createElement('h1');
+// title.innerText = 'Hola mundo desde js';
+// const button = document.createElement('button');
+// button.innerText = 'click';
+// button.addEventListener('click', function() {
+//     title.innerText = 'Actualizado con js';
+//     alert('Se realizó un click')
+// });
+// document.body.append(title)
+// document.body.append(button)
 
-document.body.append(title)
-document.body.append(button)
+
+// Destructuring //
+const user = {
+    name: 'joe',
+    age: 30
+}
+
+function printInfo(user) {
+    const {name, age} = user;
+    return '<h1>Hola ' + name +'</h1>'
+}
+
+console.log(printInfo(user));
+
+document.body.innerHTML = printInfo(user)
